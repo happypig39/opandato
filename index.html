@@ -571,6 +571,48 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    nav {
+      padding: 1rem 1.2rem;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    nav ul {
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a { font-size: 0.68rem; }
+    .hero-content {
+      padding: 2rem 1.5rem;
+      max-width: 100%;
+    }
+    .hero-panda-deco { display: none !important; }
+    section { padding: 3rem 1.5rem; }
+    .about {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .about-badge { left: 0; }
+    .services-grid { grid-template-columns: 1fr; }
+    .tools { padding: 3rem 1.5rem; }
+    .tools-grid { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+    .flow-steps { flex-direction: column; align-items: center; gap: 2rem; }
+    .flow-steps::after { display: none; }
+    .contact-cards { grid-template-columns: 1fr; }
+    footer { padding: 2rem 1.5rem; }
+  }
+
+  @media (max-width: 480px) {
+    nav ul { gap: 0.5rem; }
+    nav a { font-size: 0.62rem; }
+    .hero-content { padding: 1.5rem 1rem; }
+    section { padding: 2.5rem 1rem; }
+    .tools { padding: 2.5rem 1rem; }
+    .tools-grid { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -847,7 +889,7 @@
     <div class="dot-line" style="justify-content:center;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
     <p style="font-size:0.82rem;color:var(--light-text);margin-top:0.5rem;">まずは気軽にご相談ください。一緒に最適なプランを考えます🐼</p>
   </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:860px;margin:3rem auto 0;">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;max-width:860px;margin:3rem auto 0;">
     <div style="background:white;border-radius:1.2rem;padding:2.5rem;border:2px solid var(--dark);position:relative;overflow:hidden;">
       <div style="position:absolute;top:1.2rem;right:1.2rem;background:var(--dark);color:white;font-size:0.65rem;letter-spacing:0.15em;padding:0.3rem 0.8rem;border-radius:0.3rem;">初回限定</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:0.68rem;letter-spacing:0.3em;color:var(--accent);margin-bottom:0.8rem;text-transform:uppercase;">First Price</div>
