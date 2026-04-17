@@ -593,9 +593,24 @@
     section { padding: 3rem 1.5rem; }
     .about {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 3rem;
     }
-    .about-badge { left: 0; }
+    .about-visual {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+    .about-badge {
+      position: static;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .about-panda-deco {
+      right: -0.5rem;
+      bottom: -0.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      font-size: 1.8rem;
+    }
     .services-grid { grid-template-columns: 1fr; }
     .tools { padding: 3rem 1.5rem; }
     .tools-grid { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
