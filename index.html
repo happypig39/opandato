@@ -651,12 +651,15 @@
     .tools-grid { grid-template-columns: 1fr; }
     .hero-panda-deco {
       display: flex !important;
-      width: 18% !important;
-      right: 0.5rem !important;
+      width: 30% !important;
+      right: 0 !important;
       top: auto !important;
-      bottom: 0 !important;
+      bottom: 1rem !important;
       transform: none !important;
+      overflow: hidden !important;
     }
+    .hero-panda-deco > div:first-child { display: none !important; }
+    .hero-panda-deco img { width: 100% !important; height: auto !important; }
   }
 </style>
 </head>
